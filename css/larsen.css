@@ -1,0 +1,1062 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+
+1.0 Main css
+2.0 Header css
+3.0 Footer css
+4.0 Page Home css
+5.0 Page Information css
+    5.1 About
+    5.2 Contact
+    5.3 Terms
+    5.4 404
+6.0 Pages css
+    6.1 Trees
+    6.2 Decoration
+7.0 Responsive css
+    7.1 Large Screen
+    7.2 Medium Screen
+    7.3 Small Screen
+    7.4 Extra Small Screen
+
+---------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------
+1.0 Main css
+---------------------------------------------------------------- */
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #333333;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.red-underline {
+  width: 100px;
+  background: #890527;
+  height: 3px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 100px;
+}
+
+.page-hero img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  padding-top: 150px;
+}
+
+.map-hero {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  padding-top: 150px;
+}
+
+button {
+  background-color: #890527;
+  padding: 8px 25px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*--------------------------------------------------------------
+2.0 Header css
+---------------------------------------------------------------- */
+
+header.navbar {
+  background-color: white;
+  opacity: 0.9;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  transition: all 1s ease;
+  z-index: 1;
+}
+
+header.navbar .row {
+  width: 100%;
+}
+
+header.navbar #logo {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  transition: all 1s ease;
+}
+
+header.navbar nav .nav-hr {
+  display: none;
+}
+
+header.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar nav li {
+  border-bottom: 2px solid transparent;
+  transition: all 1s ease;
+  padding: 10px;
+}
+
+header.navbar nav li:hover {
+  border-bottom: 2px solid #890527;
+}
+
+header.navbar nav li a {
+  color: #333333;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header.navbar nav li a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+header.navbar nav .current_page_item {
+  border-bottom: 2px solid #890527;
+}
+
+header.navbar.sticky {
+  padding: 10px;
+}
+
+header.navbar.sticky #logo {
+  height: 75px;
+  width: auto;
+}
+
+.navbar-light .navbar-toggler {
+  color: #333333;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-light .navbar-toggler:hover {
+  color: #890527;
+  box-shadow: none;
+}
+
+
+
+/*--------------------------------------------------------------
+3.0 Footer css
+---------------------------------------------------------------- */
+
+footer {
+  background-color: #333333;
+  padding: 50px 0;
+}
+
+footer a h3 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+footer a h3:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #890527;
+}
+
+footer a p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+}
+
+footer .menu-footer-container {
+  width: 100%;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+footer nav a {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+footer nav a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #890527;
+}
+
+footer .footer-hr {
+  border: 1px solid #707070;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+
+footer .contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+footer .contact-info a {
+  color: white;
+  text-align: center;
+}
+
+footer .contact-info a i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+footer .contact-info a h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+footer .contact-info a p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+footer .contact-info a p:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #890527;
+}
+
+footer .contact-info a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #890527;
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 Page Home css
+---------------------------------------------------------------- */
+
+.home-hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  padding-top: 150px;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 50px;
+}
+
+.hero-overlay h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.frontpage a:hover {
+  text-decoration: none;
+}
+
+.frontpage a:hover h2 {
+  text-decoration: none;
+  color: #890527;
+}
+
+.frontpage a:hover p {
+  text-decoration: none;
+}
+
+.frontpage .col-xl-3.col-md-6 {
+  position: unset;
+}
+
+.frontpage .product-box {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+}
+
+.frontpage .product-box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.frontpage .product-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.frontpage .product-box .box-txt {
+  padding: 30px 20px;
+}
+
+.frontpage .product-box .box-txt h2 {
+  font-size: 20px;
+}
+
+
+
+/*--------------------------------------------------------------
+5.0 Page Information css
+---------------------------------------------------------------- */
+
+/* 5.1 About */
+
+.aboutpage h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #333333;
+  margin: 0;
+  margin-top: 75px;
+}
+
+.aboutpage p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.aboutpage .team-single {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutpage .team-single img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+}
+
+.aboutpage .team-single h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.aboutpage .team-single p {
+  margin-bottom: 5px;
+}
+
+.aboutpage .team-single p.team-title {
+  font-weight: 400;
+}
+
+.aboutpage .team-single a {
+  color: #333333;
+}
+
+.aboutpage .team-single a:hover {
+  color: #890527;
+  text-decoration: none;
+}
+
+
+/* 5.2 Contact */
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact a:hover {
+  text-decoration: none;
+}
+
+.contact a:hover p {
+  color: #890527;
+}
+
+.contact a p {
+  margin-bottom: 5px;
+}
+
+.contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact form .wpcf7-submit {
+  background-color: #890527;
+  padding: 8px 25px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  width: auto;
+}
+
+.contact form .wpcf7-submit:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact form p {
+  margin: 0;
+  width: 100%;
+}
+
+.contact form p:nth-child(2) {
+  width: 50%;
+  padding-right: 4px;
+}
+
+.contact form p:nth-child(3) {
+  width: 50%;
+  padding-left: 4px;
+}
+
+.contact form input {
+  width: 100%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 25px;
+  margin-bottom: 10px;
+}
+
+.contact form input:focus {
+  outline-color: #890527;
+}
+
+.contact form textarea {
+  width: 100%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 25px;
+  margin-bottom: 15px;
+}
+
+.contact form textarea:focus {
+  outline-color: #890527;
+}
+
+.contact form ::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #333333;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+
+/* 5.3 Terms */
+
+.terms .nav-pills {
+  justify-content: flex-end;
+}
+
+.terms .nav-pills .nav-link {
+  opacity: 0.3;
+  border: none;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.terms .nav-pills .nav-link img {
+  width: 50px;
+}
+
+.terms .nav-pills .nav-link:hover {
+  opacity: 1;
+}
+
+.terms .nav-pills .nav-link.active, .terms .nav-pills .nav-link .nav-pills .show > .nav-link {
+  background-color: transparent;
+  opacity: 1;
+}
+
+
+/* 5.4 404 */
+
+.page-404 {
+  padding-top: 150px;
+}
+
+.page-404 .page-404-content {
+  padding: 100px 0;
+}
+
+.page-404 .page-404-content h1 {
+  text-align: center;
+}
+
+.page-404 .page-404-content h4 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-404 .page-404-content .red-underline {
+  width: 100px;
+  background: #890527;
+  height: 3px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.page-404 .page-404-content .buttons-404 {
+  display: flex;
+  justify-content: center;
+}
+
+.page-404 .page-404-content .buttons-404 button {
+  margin: 0 5px;
+}
+
+/*--------------------------------------------------------------
+6.0 Pages css
+---------------------------------------------------------------- */
+
+/* 6.1 Trees */
+
+.trees a:hover {
+  text-decoration: none;
+}
+
+.trees a:hover h2 {
+  text-decoration: none;
+  color: #890527;
+}
+
+.trees a:hover p {
+  text-decoration: none;
+}
+
+.trees a .sigle-tree {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+}
+
+.trees a .sigle-tree:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trees a .sigle-tree img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.trees a .sigle-tree .tree-txt {
+  padding: 30px 20px;
+}
+
+.trees a .sigle-tree .tree-txt h2 {
+  font-size: 20px;
+}
+
+.trees a .sigle-tree .tree-txt p {
+  margin-bottom: 0;
+}
+
+
+/* 6.2 Decoration */
+
+.decoration .nav-tabs {
+  border: none;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.decoration .nav-tabs .nav-link {
+  border: 3px solid transparent;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  padding: 0;
+  margin: 0 25px;
+  align-self: center;
+  font-size: 25px;
+}
+
+.decoration .nav-tabs .nav-link.active {
+  border-bottom: 3px solid #890527;
+}
+
+.decoration .nav-tabs .nav-pipe {
+  font-size: 40px;
+  color: #333333;
+  font-weight: 300;
+}
+
+.decoration a:hover {
+  text-decoration: none;
+}
+
+.decoration a:hover h2 {
+  text-decoration: none;
+  color: #890527;
+}
+
+.decoration a:hover p {
+  text-decoration: none;
+}
+
+.decoration a .sigle-decoration {
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-top: 30px;
+}
+
+.decoration a .sigle-decoration:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.decoration a .sigle-decoration img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.decoration a .sigle-decoration .decoration-txt {
+  padding: 30px 20px;
+}
+
+.decoration a .sigle-decoration .decoration-txt h2 {
+  font-size: 20px;
+}
+
+.decoration a .sigle-decoration .decoration-txt p {
+  margin-bottom: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+7.0 Responsive css
+---------------------------------------------------------------- */
+
+/* 7.1 Large Screen */
+
+@media screen and (max-width: 1200px) {
+  header.navbar nav li a {
+    font-size: 14px;
+  }
+
+  .home-hero img {
+    padding-top: 127px;
+  }
+  
+  .page-hero img {
+    padding-top: 127px;
+    height: 450px;
+  }
+
+  .map-hero {
+    padding-top: 127px;
+    height: 450px;
+  }
+
+  .frontpage .product-box .box-txt h2 {
+    font-size: 30px;
+  }
+
+  .trees a .sigle-tree img {
+    height: 350px;
+  }
+
+  .decoration a .sigle-decoration img {
+    height: 250px;
+  }
+
+  .page-404 {
+    padding-top: 127px;
+  }
+}
+
+
+/* 7.2 Medium Screen */
+
+@media screen and (max-width: 991px) {
+  header.navbar nav ul {
+    flex-direction: column;
+  }
+
+  header.navbar nav li a {
+    font-size: 16px;
+  }
+
+  header.navbar #logo {
+    height: 75px;
+    width: auto;
+  }
+
+  header.navbar nav .nav-hr {
+    display: block;
+  }
+
+  .home-hero img {
+    padding-top: 115px;
+  }
+
+  .page-hero img {
+    padding-top: 115px;
+    height: 400px;
+  }
+
+  .map-hero {
+    padding-top: 115px;
+    height: 400px;
+  }
+
+  .frontpage .product-box .box-txt h2 {
+    font-size: 25px;
+  }
+
+  .trees a .sigle-tree img {
+    height: 400px;
+  }
+
+  .contact form p:nth-child(2) {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .contact form p:nth-child(3) {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .page-404 {
+    padding-top: 115px;
+  }
+}
+
+
+/* 7.3 Small Screen */
+
+@media screen and (max-width: 767px) {
+  .page-hero img {
+    height: 350px;
+  }
+
+  .map-hero {
+    height: 350px;
+  }
+
+  .frontpage .product-box .box-txt h2 {
+    font-size: 30px;
+  }
+
+  .trees a .sigle-tree img {
+    height: 300px;
+  }
+
+  .decoration .nav-tabs .nav-link {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .decoration .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #890527;
+  }
+
+  .decoration .nav-tabs .nav-pipe {
+    font-size: 30px;
+  }
+
+  .decoration a .sigle-decoration img {
+    height: 200px;
+  }
+
+  .contact form {
+    margin-bottom: 50px;
+  }
+
+  .contact form p:nth-child(2) {
+    width: 50%;
+    padding-right: 4px;
+  }
+  
+  .contact form p:nth-child(3) {
+    width: 50%;
+    padding-left: 4px;
+  }
+
+  footer a h3 {
+    text-align: center;
+  }
+
+  footer a p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  footer .footer-hr {
+    margin-bottom: 0;
+  }
+
+  footer .contact-info a i {
+    margin-top: 35px;
+  }
+}
+
+
+/* 7.4 Extra Small Screen */
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  .red-underline {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  header.navbar #logo {
+    height: 75px;
+    width: auto;
+  }
+
+  header.navbar.sticky #logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .page-hero img {
+    height: 250px;
+  }
+
+  .map-hero {
+    height: 250px;
+  }
+
+  .hero-overlay {
+    bottom: 30px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 30px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .frontpage .product-box .box-txt h2 {
+    font-size: 20px;
+  }
+
+  .aboutpage h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .aboutpage .team-single {
+    margin-bottom: 35px;
+  }
+
+  .aboutpage .team-single img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .aboutpage .team-single h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .aboutpage .team-single p {
+    margin-bottom: 2px;
+  }
+
+  .trees a .sigle-tree img {
+    height: 450px;
+  }
+
+  .decoration .nav-tabs .nav-link {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+
+  .decoration .nav-tabs .nav-link.active {
+    border-bottom: 1px solid #890527;
+  }
+
+  .decoration .nav-tabs .nav-pipe {
+    font-size: 20px;
+  }
+
+  .decoration a .sigle-decoration img {
+    height: 300px;
+  }
+
+  .contact form ::placeholder {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #333333;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+  .contact form .wpcf7-submit {
+    font-size: 14px;
+  }
+
+  .contact form p:nth-child(2) {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .contact form p:nth-child(3) {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .terms .nav-pills .nav-link {
+    margin: 0 2.5px;
+  }
+
+  .terms .nav-pills .nav-link img {
+    width: 30px;
+  }
+
+  .page-404 .page-404-content {
+    padding: 50px 0;
+  }
+
+  .page-404 .page-404-content .red-underline {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .page-404 .page-404-content h4 {
+    font-size: 16px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+  }
+
+  footer nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  footer .footer-hr {
+    display: none;
+  }
+}
